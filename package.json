@@ -1,0 +1,32 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "```",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV='development' tsc && node dist/server.js",
+    "watch-server": "NODE_ENV='development' nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/server.ts",
+    "debug-watch-server": "NODE_ENV='development' nodemon --inspect --watch 'src/**/*' -e ts,tsx --exec 'node -r ts-node/register' ./src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baoendemao/test.git"
+  },
+  "author": "journey6688@126.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baoendemao/test/issues"
+  },
+  "homepage": "https://github.com/baoendemao/test#readme",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.40",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.2.2"
+  }
+}
